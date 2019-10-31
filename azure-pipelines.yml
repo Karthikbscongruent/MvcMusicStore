@@ -28,9 +28,11 @@ steps:
     tokenPrefix: '__'
     tokenSuffix: '__'
 
-- task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifact'
+
+- task: ArchiveFiles@2
   inputs:
-    PathtoPublish: '$(build.artifactstagingdirectory)'
-    ArtifactName: '$(Parameters.ArtifactName)'
-  condition: succeededOrFailed()
+    rootFolderOrFile: '$(Build.BinariesDirectory)'
+    includeRootFolder: true
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    replaceExistingArchive: true
