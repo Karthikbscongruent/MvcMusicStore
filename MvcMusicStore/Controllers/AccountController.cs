@@ -17,6 +17,7 @@ namespace MvcMusicStore.Controllers
     [InitializeSimpleMembership]
     public class AccountController : Controller
     {
+        // Change to trigger CI
         //
         // GET: /Account/Login
 
