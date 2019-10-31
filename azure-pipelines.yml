@@ -28,8 +28,8 @@ steps:
     tokenPrefix: '__'
     tokenSuffix: '__'
 
-- task: PublishBuildArtifacts@1
+- task: DownloadBuildArtifacts@0
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'drop'
-
+    buildType: 'current'
+    downloadType: 'specific'
+    downloadPath: '$(System.ArtifactsDirectory)'
