@@ -45,9 +45,9 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: 'provisioning'
+    SourceFolder: 'provisioning/webapp'
     Contents: '**'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)\provisioning'
 
 - task: PublishBuildArtifacts@1
   inputs:
