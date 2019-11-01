@@ -3,10 +3,10 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "subscriptionId": {
-            "value": "ba8a3025-b74d-4365-9e26-229fbf1846b0"
+            "value": "3cb9b5fa-ea8d-414d-8dcc-f8c70d6b0677"
         },
         "name": {
-            "value": "MVCMusictest"
+            "value": "IaC-musicstore-pl"
         },
         "location": {
             "value": "South India"
@@ -15,31 +15,19 @@
             "value": ""
         },
         "hostingPlanName": {
-            "value": "ASP-KarTestResourceGroup-be6d"
+            "value": "ASP-KarthikResourceGroup-babf"
         },
         "serverFarmResourceGroup": {
-            "value": "KarTestResourceGroup"
+            "value": "KarthikResourceGroup"
         },
         "alwaysOn": {
-            "value": true
-        },
-        "sku": {
-            "value": "Standard"
-        },
-        "skuCode": {
-            "value": "S1"
-        },
-        "workerSize": {
-            "value": "0"
-        },
-        "workerSizeId": {
-            "value": "0"
-        },
-        "numberOfWorkers": {
-            "value": "1"
+            "value": false
         },
         "currentStack": {
-            "value": ""
+            "value": "dotnet"
+        },
+        "netFrameworkVersion": {
+            "value": "v4.0"
         }
     }
 }
